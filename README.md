@@ -1,24 +1,8 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Este é um projeto sob Rails 6.1.1 e Ruby 3.0.0.
 
-Things you may want to cover:
+* Dependências utilizadas: 
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+    * Principais: rails 6.1.1, devise, sqlite3, puma, sass-rails, simplecov, rspec-rails 4.0.2
+    * Acessórias: simple_form, haml, haml-rails, bootstrap, jquery, popper
