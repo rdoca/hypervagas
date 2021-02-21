@@ -19,7 +19,7 @@ pt-BR:
           clt: CLT
           pj: PJ
           match: A combinar
-        remote: Esta vaga é totalmente remota?
+        remote: Trabalhar totalmente remoto?
         city: Cidade
         state: Estado
         summary: Resumo da descrição (até 360 caracteres)

@@ -14,12 +14,12 @@
       - if user_signed_in?
         %li.nav-item.active
           %a.nav-link{:href => dynamic_url_company}
-            Minha Empresa
+            Empresa
         %li.nav-item.active
           %a.nav-link{:href => positions_url}
-            Minhas Vagas
+            Minhas vagas
         %li.nav-item.dropdown
-          %a#dropdown01.nav-link.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#"} Settings
+          %a#dropdown01.nav-link.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#"} Configurações
           .dropdown-menu{"aria-labelledby" => "dropdown01"}
             = link_to('Sair', destroy_user_session_path, method: :delete, class: 'dropdown-item')
         %li.nav-item

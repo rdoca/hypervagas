@@ -8,7 +8,6 @@ class CreatePositions < ActiveRecord::Migration[6.0]
       t.string :city
       t.string :state
       t.text :summary
-      t.text :description
       t.boolean :publish
       t.references :company, null: false, foreign_key: true
 

@@ -1,0 +1,8 @@
+pt-BR:
+  views:
+    pagination:
+      previous: Anterior
+      next: Próxima
+      first: Primeira
+      last: Última
+      truncate: #

@@ -23,6 +23,10 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'simple_form'
 gem 'haml'
 gem "haml-rails", "~> 2.0"
+gem 'kaminari'
+gem 'bootstrap4-kaminari-views'
+gem 'ransack', github: 'activerecord-hackery/ransack'
+
 
 gem 'simplecov', require: false, group: :test
 
