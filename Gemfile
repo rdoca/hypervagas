@@ -4,6 +4,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '3.0.0'
 
 gem 'rails', '~> 6.1.1'
+
 gem 'devise'
 gem 'sqlite3', '~> 1.4'
 gem 'puma', '~> 5.0'
@@ -26,15 +27,20 @@ gem "haml-rails", "~> 2.0"
 gem 'kaminari'
 gem 'bootstrap4-kaminari-views'
 gem 'ransack', github: 'activerecord-hackery/ransack'
-
+gem 'clipboard-rails'
+gem 'jquery-turbolinks'
 
 gem 'simplecov', require: false, group: :test
+
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.4', require: false
+
+
+
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

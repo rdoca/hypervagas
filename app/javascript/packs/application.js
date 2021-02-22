@@ -15,6 +15,9 @@ ActiveStorage.start()
 import 'bootstrap'
 import './src/application.scss'
 
+require("trix")
+require("@rails/actiontext")
+
 // Uncomment to copy all static images under ../images to the output folder and reference
 // them with the image_pack_tag helper in views (e.g <%= image_pack_tag 'rails.png' %>)
 // or the `imagePath` JavaScript helper below.
@@ -30,8 +33,7 @@ $(function () {
   })
 })
 
-require("trix")
-require("@rails/actiontext")
+
 
 
 $(document).ready(function(){
@@ -42,12 +44,24 @@ $(document).ready(function(){
       $('#current').text(characterCount);
     });
   }
-
-$('.copy-url').click(function(e){
-  e.preventDefault();
-  var url = $(this).attr('data-clipboard-text');
-  navigator.clipboard.writeText(url);
-  alert('Link da vaga copiado!')
-  })
-
 });
+
+
+// $(document).ready(function(){  
+//   var clipboard = new Clipboard('.copy-url');
+//   console.log(clipboard);
+//   alert('Link da vaga copiado!');
+// });
+//= link_to(image_tag('social-network/copy.svg', :alt => 'Ícone de copiar', :height => '32', :width => '32', :class => 'share-copy-icon'), '#', :class => 'copy-url', :data => {'clipboard-action': "copy"}, :data => {'clipboard-target': url_position(position)}
+
+
+// $('.copy-url').click(function(e){
+//   e.preventDefault();
+//   var url = $(this).attr('data-clipboard-text');
+//   // navigator.clipboard.writeText(url);
+//   url.select ();
+//   document.execCommand ("Copy");
+//   alert('Link da vaga copiado!')
+//   })
+// data: {'clipboard-text': })
+//= link_to(image_tag('social-network/copy.svg', :alt => 'Ícone de copiar', :height => '32', :width => '32', :class => 'share-copy-icon'), '#', class: 'copy-url', data: {'clipboard-text': url_position(position)})
