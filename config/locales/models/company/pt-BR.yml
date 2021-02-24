@@ -4,6 +4,8 @@ pt-BR:
       company: Empresa
     attributes:
       company:
-        name: Nome da empresa
-        url: Site da empresa
+        name: Nome fantasia da empresa
+        address: Endereço
+        cnpj: CNPJ
+        domain: Site da empresa
         logo: Logo da Empresa

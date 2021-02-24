@@ -3,7 +3,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '3.0.0'
 
-gem 'rails', '~> 6.1.1'
+gem 'rails', '~> 6.1.3'
 
 gem 'devise'
 gem 'sqlite3', '~> 1.4'
@@ -28,7 +28,9 @@ gem 'kaminari'
 gem 'bootstrap4-kaminari-views'
 gem 'ransack', github: 'activerecord-hackery/ransack'
 gem 'clipboard-rails'
-gem 'jquery-turbolinks'
+gem 'jquery-rails'
+gem 'bootstrap'
+gem 'popper_js'
 
 gem 'simplecov', require: false, group: :test
 
@@ -60,11 +62,10 @@ group :development do
 end
 
 group :test do
-  # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '>= 3.26'
   gem 'selenium-webdriver'
-  # Easy installation and use of web drivers to run system tests with browsers
   gem 'webdrivers'
+  gem 'shoulda-matchers', '~> 4.0'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

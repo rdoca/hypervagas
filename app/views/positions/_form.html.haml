@@ -2,11 +2,19 @@
   = f.input :name
   = f.input :career, as: :select, collection: @careers, label_method: :second, value_method: :first, include_blank: false, selected: @position.career
   = f.input :contract, as: :select, collection: @contracts, label_method: :second, value_method: :first, include_blank: false, selected: @position.contract
+  = f.input :level, as: :select, collection: @levels, label_method: :second, value_method: :first, include_blank: false, selected: @position.level
   = f.input :remote
   = f.input :publish
   = f.input :city
   = f.input :state, as: :select, collection: Brazil.states, label_method: :second, value_method: :first
   = f.input :summary, maxlength: 360, input_html: { class: 'count-textarea', rows: 4 }
+  = f.input :remuneration
+  = f.input :requirements
+  = f.input :technology, as: :select, collection: @technologies, multiple: true, include_blank: false
+  = f.input :team, as: :select, collection: @teams, multiple: true, include_blank: false
+  = f.input :expiration_date
+  = f.input :spots_available
+
   #the-count
     %span#current 0
     %span#maximun / 360

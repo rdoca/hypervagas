@@ -64,7 +64,9 @@ ActiveRecord::Schema.define(version: 2021_02_20_192941) do
 
   create_table "companies", force: :cascade do |t|
     t.string "name"
-    t.string "url"
+    t.string "domain"
+    t.string "address"
+    t.string "cnpj"
     t.integer "user_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false

@@ -1,6 +1,8 @@
 = simple_form_for @company do |f|
   = f.input :name
-  = f.input :url
+  = f.input :domain
+  = f.input :address
+  = f.input :cnpj
   = image_tag(url_for(@company.logo), class: 'company-logo') unless @company.new_record? && !@company.logo.nil?
   = f.input :logo
   = f.button :submit, class: 'btn btn-primary'

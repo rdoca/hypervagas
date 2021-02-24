@@ -17,11 +17,18 @@ pt-BR:
         contract: Tipo de contrato
         contracts:
           clt: CLT
-          pj: PJ
+          jp: PJ
           match: A combinar
+        level:
+          middle: Pleno
+
+
         remote: Trabalhar totalmente remoto?
         city: Cidade
         state: Estado
         summary: Resumo da descrição (até 360 caracteres)
-        description: Descrição
-        publish: Esta vaga é pública?
+        requirements: Requisitos
+        remuneration: Remuneração
+        expiration_date: Data limite da candidatura
+        spots_available: Vagas disponíveis
+        publish: Vaga pública?

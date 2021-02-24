@@ -5,17 +5,12 @@ class Position < ApplicationRecord
                 :product, :technology, :other]
   enum contract: [:clt, :pj, :match]
 
-  has_rich_text :description
+  enum levels: [:junior, :middle, :senior]
 
-  validates :name, :career, :contract, :city, :state, :summary, presence: true
+  has_rich_text :requirements
 
-  before_save :set_slug 
+  validates :name, :career, :contract, :level, :city, :state, :summary, :requirements,
+            :remuneration, :expiration_date, :spots_available, presence: true
 
-  validates :slug, uniqueness: true
 
-  private
-  def set_slug
-    self.slug = "#{self.company.name.parameterize}-#{self.name.parameterize}"
-  end
-
-end
+end                                   

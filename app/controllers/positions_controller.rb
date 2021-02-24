@@ -41,7 +41,8 @@ class PositionsController < ApplicationController
   end
 
   def params_position
-    params.require(:position).permit(:name, :career, :contract, :remote, :publish, :city, :state, :summary, :description)
+    params.require(:position).permit(:name, :career, :contract, :level, :remote, :publish, :city, :state, :summary, :requirements,
+                                    :remuneration, :technology, :team, :expiration_date, :spots_available )
   end
 
   def set_company
