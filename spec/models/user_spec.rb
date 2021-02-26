@@ -1,5 +1,32 @@
 require 'rails_helper'
 
-RSpec.describe User, type: :model do
-  pending "add some examples to (or delete) #{__FILE__}"
-end
+# describe X do
+#   context 'validation' do
+#     it '' do
+#       x = X.new
+
+#       expect(x.valid?).to eq false
+#       expect(x.errors.count).to eq 5
+#     end
+
+#     it '' do
+#       x = X.new(name: '', )
+
+#       expect(x.valid?).to eq true
+#     end
+    
+#     it '' do
+#       x = X.new
+
+#       x.valid?
+
+#       expect(x.errors[:name]).to include('')
+#   end
+  
+#   context 'validation' do
+#     it '' do
+#     end
+#   end
+    
+    
+#end

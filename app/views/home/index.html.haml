@@ -1,9 +1,13 @@
 %header.text-center
   %h1 Hyper Vagas
-  %p Anúncios de vagas
+  %p Anúncios na Área de Tecnologia
 
 = search_form_for @q, url: root_path do |f|
   .row
+    .col-sm
+      .form-group
+        =f.label :trading_name_cont, "Empresa"
+        =f.search_field :name_cont, class: "form-control"
     .col-sm
       .form-group
         =f.label :name_cont, "Nome da vaga"
